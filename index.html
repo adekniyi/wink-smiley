@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Wink Animy</title>
+</head>
+<body>
+    <style>
+        .rectangle{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin:auto;
+            height: 300px;
+            width: 600px;
+            background-color: #FBD671;
+            animation-name: smiley;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .eye{
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            top: 45px;
+            left: 370px;
+        }
+        .eye:after{
+            background-color: white;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 10px;
+            left: 10px;
+        }
+        .winks {
+          position: absolute;
+          margin: auto;
+          top: -140px;
+          bottom: 0;
+          left: 0;
+          right: 240px;
+          width: 80px;
+          height: 25px;
+          background-color: transparent;
+          /* */
+          border-top-left-radius: 100% 180%;
+          border-top-right-radius: 100% 180%;
+          box-shadow: 2px -4px 0px 0px black;
+        }
+        .nose{
+          position: absolute;
+          margin: auto;
+          background-color: black;
+          top: 0px;
+          bottom: 0;
+          left: 0;
+          border-radius: 40%;
+          right: 0px;
+          width: 30px;
+          height: 20px;
+        }
+        .firstChin{
+            background-color: rgb(255, 123, 0);
+            border-radius: 50%;
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            top: 150px;
+            bottom: 0;
+            left: 100px;
+            right: 0px;
+        }
+        .secondChin{
+            background-color: rgb(255, 123, 0);
+            border-radius: 50%;
+            position: absolute;
+            width: 65px;
+            height: 65px;
+            /* top: 150px; */
+            bottom: 0;
+            right: 0px;
+            top: 150px;
+            z-index:1;
+            left: 420px;
+        }
+        .mouth{
+            position: absolute;
+          margin: auto;
+          top: 100px;
+          bottom: 0;
+          left: 0;
+          right: 0px;
+          width: 120px;
+          height: 20px;
+          background-color: transparent;
+          border-bottom-left-radius: 100% 180%;
+          border-bottom-right-radius: 100% 180%;
+          box-shadow: 0px 4px 0px 0px black;
+        }
+    </style>
+    <div class="rectangle">
+        <div class="winks"></div>
+        <div class="eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="firstChin"></div>
+        <div class="secondChin"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
